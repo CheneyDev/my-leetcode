@@ -1,8 +1,9 @@
-public class my_approach {
+public class my_frist_try {
 
-// --------------
-// Wrong Answer
-// --------------
+    // --------------
+    // Wrong Answer
+    // int Max overflow
+    // --------------
 
     public boolean isPalindrome(int x) {
         if (x < 0) {
@@ -12,16 +13,13 @@ public class my_approach {
         } else if (x % 10 == 0) {
             return false;
         } else {
-            int y, z;
-            int divider = 10;
             int final_value = 0;
-            int position = 1;
-            y = x;
-            while (y != 0) {
-                z = y % divider;
-                y = y / divider;
-                final_value = final_value + z * position;
-                position *= 10;
+            int dividedNumber = x;
+            int lastDigit = 0;
+            while (dividedNumber != 0) {
+                lastDigit = dividedNumber % 10;
+                dividedNumber = dividedNumber / 10;
+                final_value = final_value * 10 + lastDigit;
             }
             if (final_value == x) {
                 return true;
