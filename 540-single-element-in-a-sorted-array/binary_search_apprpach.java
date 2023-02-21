@@ -1,4 +1,5 @@
 
+// https://leetcode.com/problems/single-element-in-a-sorted-array/solutions/3212230/binary-search-with-pics-video-java-c-python/
 public class binary_search_apprpach {
     public int singleNonDuplicate(int[] nums) {
         int low=0;
