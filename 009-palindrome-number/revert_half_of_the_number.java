@@ -1,5 +1,5 @@
 public class revert_half_of_the_number {
-public boolean isPalindrome(int x) {
+    public boolean isPalindrome(int x) {
         if (x < 0 || (x % 10 == 0 && x != 0)) {
             return false;
         }
