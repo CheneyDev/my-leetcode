@@ -9,16 +9,16 @@ public:
 
         while (start <= end)
         {
-            int mid = (start + end) / 2;
+            mid = (start + end) / 2;
 
             if (nums[mid] == target)
             {
                 return mid;
             }
 
-            if (nums[start] < nums[mid])
+            if (nums[start] <= nums[mid])
             {
-                if (nums[start] < target && nums[mid] > target)
+                if (nums[start] <= target && nums[mid] > target)
                 {
                     end = mid - 1;
                 }
@@ -29,7 +29,7 @@ public:
             }
             else
             {
-                if (nums[mid] < target && nums[end] > target)
+                if (nums[mid] < target && nums[end] >= target)
                 {
                     start = mid + 1;
                 }
