@@ -16,6 +16,7 @@ public class Apporach1 {
                     else if(target>nums[mid-1]) return mid;
                 }else{
                     return 0;
+                    
                 }
                 
             }else if(target>nums[mid]){
