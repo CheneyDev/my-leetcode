@@ -16,6 +16,6 @@ class Approach1 {
                 p2--;
             }
         }
-        return newNums;
+        return newNums; 
     }
 }
