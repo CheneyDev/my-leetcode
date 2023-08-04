@@ -4,32 +4,41 @@
 
 Binary Search
 
-| ID   | No.  | Title                               | Status |
-| ---- | ---- | ----------------------------------- | :----: |
-| 1    | 35   | Search Insert Position              |   ✅    |
-| 2    | 33   | Search in Rotated Sorted Array      |   ✅    |
-| 3    | 69   | Sqrt(x)                             |   ✅    |
-| 4    | 74   | Search a 2D Matrix                  |   ✅    |
-| 5    | 875  | Koko Eating Bananas                 |   ✅    |
-| 6    |      |                                     |        |
-| 7    |      |                                     |        |
-| 8    |      |                                     |        |
-| 9    |      |                                     |        |
-| 10   |      |                                     |        |
-| 11   | 1    | two-sum                             |   ✅    |
-| 12   | 9    | palindrome-number                   |   ✅    |
-| 13   | 26   | remove-duplicates-from-sorted-array |   ✅    |
-| 14   | 33   | search-in-rotated-sorted-array      |   ✅    |
-| 15   | 35   | search-insert-position              |   ✅    |
-| 16   | 69   | sqrt(x)                             |   ✅    |
-| 17   | 74   | search-a-2d-matrix                  |   ✅    |
-| 18   | 94   | binary-tree-inorder-traversal       |   ✅    |
-| 19   | 278  | first-bad-version                   |   ✅    |
-| 20   | 344  | reverse-string                      |   ✅    |
-| 21   | 540  | single-element-in-a-sorted-array    |   ✅    |
-| 22   | 595  | big-countries                       |   ✅    |
-| 23   | 704  | binary-search                       |   ✅    |
-| 24   | 875  | koko-eating-bananas                 |   ✅    |
-| 25   | 977  | squares-of-a-sorted-array           |   ✅    |
-| 26   | 1757 | recyclable-and-low-fat-pro          |   ✅    |
+| No.  | Title                               | Status |
+| ---- | ----------------------------------- | :----: |
+| 35   | Search Insert Position              |   ✅    |
+| 33   | Search in Rotated Sorted Array      |   ✅    |
+| 69   | Sqrt(x)                             |   ✅    |
+| 74   | Search a 2D Matrix                  |   ✅    |
+| 875  | Koko Eating Bananas                 |   ✅    |
 
+Two Pointers
+
+
+| No.  | Title                               | Status |
+| ---- | ----------------------------------- | :----: |
+| 992  | Subarrays with K Different Integers |   ✅    |
+| 167  | Two Sum II – Input array is sorted  |   ✅    |
+| 977  | Squares of a Sorted Array           |   ✅    |
+
+未分类
+
+
+| No.  | Title                               | Status |
+| ---- | ----------------------------------- | :----: |
+| 1    | two-sum                             |   ✅    |
+| 9    | palindrome-number                   |   ✅    |
+| 26   | remove-duplicates-from-sorted-array |   ✅    |
+| 33   | search-in-rotated-sorted-array      |   ✅    |
+| 35   | search-insert-position              |   ✅    |
+| 69   | sqrt(x)                             |   ✅    |
+| 74   | search-a-2d-matrix                  |   ✅    |
+| 94   | binary-tree-inorder-traversal       |   ✅    |
+| 278  | first-bad-version                   |   ✅    |
+| 344  | reverse-string                      |   ✅    |
+| 540  | single-element-in-a-sorted-array    |   ✅    |
+| 595  | big-countries                       |   ✅    |
+| 704  | binary-search                       |   ✅    |
+| 875  | koko-eating-bananas                 |   ✅    |
+| 977  | squares-of-a-sorted-array           |   ✅    |
+| 1757 | recyclable-and-low-fat-pro          |   ✅    |
