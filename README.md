@@ -26,6 +26,7 @@ Two Pointers
 | 977  | Squares of a Sorted Array           |   ✅    |
 | 42   | Trapping Rain Water                 |   ✅    |
 | 344  | reverse-string                      |   ✅    |
+| 11   | Container with most water           |   ✅    |
 
 Uncategorized
 
