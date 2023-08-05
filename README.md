@@ -27,6 +27,7 @@ Two Pointers
 | 42   | Trapping Rain Water                 |   ✅    |
 | 344  | reverse-string                      |   ✅    |
 | 11   | Container with most water           |   ✅    |
+| 9    | palindrome-number                   |   ✅    |
 
 Uncategorized
 
@@ -34,6 +35,5 @@ Uncategorized
 | No.  | Title                               | Status |
 | ---- | ----------------------------------- | :----: |
 | 1    | two-sum                             |   ✅    |
-| 9    | palindrome-number                   |   ✅    |
 | 26   | remove-duplicates-from-sorted-array |   ✅    |
 | 94   | binary-tree-inorder-traversal       |   ✅    |
