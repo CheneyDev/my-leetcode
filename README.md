@@ -15,7 +15,7 @@ Binary Search
 | 278  | first-bad-version                |   ✅    |
 | 540  | single-element-in-a-sorted-array |   ✅    |
 | 704  | binary-search                    |   ✅    |
-| 4    | Median of two sorted arrays      |        |
+| 4    | Median of two sorted arrays      |   ✅    |
 
 Two Pointers
 
