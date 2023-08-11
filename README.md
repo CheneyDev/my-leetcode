@@ -31,6 +31,13 @@ Two Pointers
 | 9    | palindrome-number                   |   ✅    |
 | 917  | Reverse only letters                |   ✅    |
 
+List
+
+
+| No.  | Title           | Status |
+| ---- | --------------- | :----: |
+| 2    | Add two numbers |        |
+
 Uncategorized
 
 
