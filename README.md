@@ -36,7 +36,7 @@ List
 
 | No.  | Title           | Status |
 | ---- | --------------- | :----: |
-| 2    | Add two numbers |        |
+| 2    | Add two numbers |   ✅    |
 
 Uncategorized
 
