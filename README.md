@@ -34,9 +34,10 @@ Two Pointers
 List
 
 
-| No.  | Title           | Status |
-| ---- | --------------- | :----: |
-| 2    | Add two numbers |   ✅    |
+| No.  | Title               | Status |
+| ---- | ------------------- | :----: |
+| 2    | Add two numbers     |   ✅    |
+| 24   | Swap nodes in pairs |        |
 
 Uncategorized
 
