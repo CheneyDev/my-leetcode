@@ -37,7 +37,8 @@ List
 | No.  | Title               | Status |
 | ---- | ------------------- | :----: |
 | 2    | Add two numbers     |   ✅    |
-| 24   | Swap nodes in pairs |        |
+| 24   | Swap nodes in pairs |   ✅    |
+| 206  | Reverse linked list |        |
 
 Uncategorized
 
