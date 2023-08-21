@@ -38,7 +38,8 @@ List
 | ---- | ------------------- | :----: |
 | 2    | Add two numbers     |   ✅    |
 | 24   | Swap nodes in pairs |   ✅    |
-| 206  | Reverse linked list |        |
+| 206  | Reverse linked list |   ✅    |
+| 141  | Linked list cycle   |        |
 
 Uncategorized
 
