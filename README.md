@@ -41,6 +41,7 @@ List
 | 206  | Reverse linked list  |   ✅    |
 | 141  | Linked list cycle    |   ✅    |
 | 23   | Merge k sorted lists |        |
+|      |                      |        |
 
 Uncategorized
 
