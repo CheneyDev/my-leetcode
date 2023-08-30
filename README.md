@@ -40,7 +40,7 @@ List
 | 24   | Swap nodes in pairs  |   ✅    |
 | 206  | Reverse linked list  |   ✅    |
 | 141  | Linked list cycle    |   ✅    |
-| 23   | Merge k sorted lists |        |
+| 23   | Merge k sorted lists |   ✅    |
 |      |                      |        |
 |      |                      |        |
 
