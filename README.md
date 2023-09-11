@@ -41,8 +41,23 @@ List
 | 206  | Reverse linked list  |   ✅    |
 | 141  | Linked list cycle    |   ✅    |
 | 23   | Merge k sorted lists |   ✅    |
-|      |                      |        |
-|      |                      |        |
+
+Tree
+
+| No.  | Title                | Status |
+| ---- | -------------------- | :----: |
+| 94    | binary tree inorder traversal      |   ✅    |
+| 100 | same tree |  |
+| 102 | binary tree level order traversal |  |
+| 814 | binary tree pruning |  |
+| 112 | path sum |  |
+| 129 | sum root to leaf numbers |  |
+| 236 |	Lowest Common Ancestor of a Binary Tree |  |
+| 297 | Serialize and Deserialize Binary Tree |  |
+| 508 | Most Frequent Subtree Sum |  |					
+| 124 | Binary Tree Maximum Path Sum |  |
+
+
 
 Uncategorized
 
