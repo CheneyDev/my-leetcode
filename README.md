@@ -47,7 +47,7 @@ Tree
 | No.  | Title                | Status |
 | ---- | -------------------- | :----: |
 | 94    | binary tree inorder traversal      |   ✅    |
-| 100 | same tree |  |
+| 100 | same tree | ✅ |
 | 102 | binary tree level order traversal |  |
 | 814 | binary tree pruning |  |
 | 112 | path sum |  |
