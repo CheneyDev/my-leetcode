@@ -14,4 +14,5 @@ This is my LeetCode Solutions repository.
 | 判断链表是否有环        | 快慢指针，fast 移两步，slow 移一步，相遇则有环               | [牛客-BM6](https://www.nowcoder.com/share/jump/451570361697200277698) |
 | 链表找环的入口节点      | 线判断是否有环，相遇点为新 slow，fast 回到头节点，再次相遇即为入口节点。 | [牛客-BM7](https://www.nowcoder.com/share/jump/451570361697200277698) |
 | 获取链表最后k个节点     | 快慢指针，fast 先移动 k 位，然后 fast 和 slow 每次移一位，fast == null 时返回 slow | [牛客-BM8](https://www.nowcoder.com/share/jump/451570361697201653561) |
+| 删除链表倒数第k个节点   | 和上面一样，只多一个虚拟头节点以及 pre 节点记录 slow 的上一个节点 | [牛客-BM9](https://www.nowcoder.com/share/jump/451570361697202449761) |
 
