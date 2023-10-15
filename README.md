@@ -16,3 +16,9 @@ This is my LeetCode Solutions repository.
 | 获取链表最后k个节点     | 快慢指针，fast 先移动 k 位，然后 fast 和 slow 每次移一位，fast == null 时返回 slow | [牛客-BM8](https://www.nowcoder.com/share/jump/451570361697201653561) |
 | 删除链表倒数第k个节点   | 和上面一样，只多一个虚拟头节点以及 pre 节点记录 slow 的上一个节点 | [牛客-BM9](https://www.nowcoder.com/share/jump/451570361697202449761) |
 
+### 动态规划
+
+| 题型           | 解法                                                  | 题目链接                                                     |
+| -------------- | ----------------------------------------------------- | ------------------------------------------------------------ |
+| 斐波那契额数列 | a=0; b=1; for(int i=2;i<=n;i++){ res=a+b; a=b; b=res} | [牛客-BM62](https://www.nowcoder.com/share/jump/451570361697356052120) |
+
