@@ -22,4 +22,5 @@ This is my LeetCode Solutions repository.
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 斐波那契额数列  | DP: a=0; b=1; for(int i=2;i<=n;i++){ res=a+b; a=b; b=res}<br />Recursion: Fib(n)=Fib(n-1)+Fib(n-2) | [牛客-BM62](https://www.nowcoder.com/share/jump/451570361697356052120) |
 | 求台阶 n 种走法 | 同斐波那契                                                   | [牛客-BM63](https://www.nowcoder.com/share/jump/451570361697425209007) |
+| 最小花费爬楼梯  | dp[i]=Min( dp[i-1]+cost[i-1], dp[i-2]+cost[i-2] )            | [牛客-BM64](https://www.nowcoder.com/share/jump/451570361697438891247) |
 
