@@ -23,6 +23,9 @@ This is my LeetCode Solutions repository.
 | 二叉树前序遍历 | def preorder(root):<br/>  if root is None: return<br/>  print(root.data)   preorder(root.left)   preorder(root.right) | [牛客-BM23](https://www.nowcoder.com/share/jump/451570361697444386866) |
 | 二叉树中序遍历 | def inorder(root):<br/>  if root is None: return<br/>  inorder(root.left)     print(root.data)   inorder(root.right) | [牛客-BM24](https://www.nowcoder.com/share/jump/451570361697444842062) |
 | 二叉树后序遍历 | def postorder(root):<br/>  if root is None: return<br/>  postorder(root.left)   postorder(root.right)   print(root.data) | [牛客-BM25](https://www.nowcoder.com/share/jump/451570361697445319015) |
+| 二叉树层序遍历 | for (int i = 0; i < queue.size(); i++) {<br />TreeNode cur = q.poll();  rows.add(cur.val);<br />if (cur.left != null)  q.add(cur.left);<br />if (cur.right != null)  q.add(cur.right);<br />}  result.add(rows); | [牛客-BM26](https://www.nowcoder.com/share/jump/451570361697446273524) |
+|                |                                                              |                                                              |
+|                |                                                              |                                                              |
 
 
 
