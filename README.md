@@ -1,6 +1,6 @@
 This is my LeetCode Solutions repository.
 
-## CheatSheet
+## 笔记 📒
 
 ### 链表
 
