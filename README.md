@@ -16,6 +16,14 @@ This is my LeetCode Solutions repository.
 | 获取链表最后k个节点     | 快慢指针，fast 先移动 k 位，然后 fast 和 slow 每次移一位，fast == null 时返回 slow | [牛客-BM8](https://www.nowcoder.com/share/jump/451570361697201653561) |
 | 删除链表倒数第k个节点   | 和上面一样，只多一个虚拟头节点以及 pre 节点记录 slow 的上一个节点 | [牛客-BM9](https://www.nowcoder.com/share/jump/451570361697202449761) |
 
+### 二叉树
+
+| 题型           | 解法                                                         | 题目链接                                                     |
+| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 二叉树前序遍历 | def preorder(root):<br/>  if root is None:<br/>    return<br/>  print(root.data)<br/>  preorder(root.left)<br/>  preorder(root.right) | [牛客-BM23](https://www.nowcoder.com/share/jump/451570361697444386866) |
+
+
+
 ### 动态规划
 
 | 题型            | 解法                                                         | 题目链接                                                     |
