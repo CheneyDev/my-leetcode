@@ -1,6 +1,6 @@
 This is my LeetCode Solutions repository.
 
-# 笔记 📒
+## HOT 100 笔记 📒
 
 
 ### 链表
