@@ -7,15 +7,15 @@ This is my LeetCode Solutions repository.
 
 | 序号 | 题目名                      | 题号                                                         | 解法简述                                                     |
 | ---- | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1    | 反转链表                    | [leetcode_01](https://leetcode.com/problems/reverse-linked-list/) |                                                              |
-| 2    | 链表内指定区间反转          | [leetcode_02](https://leetcode.com/problems/reverse-linked-list-ii/) |                                                              |
-| 3    | 链表中的节点每k个一组翻转   | [leetcode_03](https://leetcode.com/problems/reverse-nodes-in-k-group/) |                                                              |
-| 4    | 合并两个排序的链表          | [leetcode_04](https://leetcode.com/problems/merge-two-sorted-lists/) |                                                              |
-| 5    | 合并k个已排序的链表         | [leetcode_05](https://leetcode.com/problems/merge-k-sorted-lists/) |                                                              |
-| 6    | 判断链表中是否有环          | [leetcode_06](https://leetcode.com/problems/linked-list-cycle/) | 快慢指针，fast 移两步，slow 移一步，相遇则有环               |
-| 7    | 链表中环的入口结点          | [leetcode_07](https://leetcode.com/problems/linked-list-cycle-ii/) | 线判断是否有环，相遇点为新 slow，fast 回到头节点，再次相遇即为入口节点。 |
-| 8    | 链表中倒数最后k个结点       | [leetcode_08](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 快慢指针，fast 先移动 k 位，然后 fast 和 slow 每次移一位，fast == null 时返回 slow |
-| 9    | 删除链表的倒数第n个节点     | [leetcode_09](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 和上面一样，只多一个虚拟头节点以及 pre 节点记录 slow 的上一个节点 |
+| 1    | 反转链表                    | [leetcode_206](https://leetcode.com/problems/reverse-linked-list/) |                                                              |
+| 2    | 链表内指定区间反转          | [leetcode_92](https://leetcode.com/problems/reverse-linked-list-ii/) |                                                              |
+| 3    | 链表中的节点每k个一组翻转   | [leetcode_25](https://leetcode.com/problems/reverse-nodes-in-k-group/) |                                                              |
+| 4    | 合并两个排序的链表          | [leetcode_21](https://leetcode.com/problems/merge-two-sorted-lists/) |                                                              |
+| 5    | 合并k个已排序的链表         | [leetcode_23](https://leetcode.com/problems/merge-k-sorted-lists/) |                                                              |
+| 6    | 判断链表中是否有环          | [leetcode_141](https://leetcode.com/problems/linked-list-cycle/) | 快慢指针，fast 移两步，slow 移一步，相遇则有环               |
+| 7    | 链表中环的入口结点          | [leetcode_142](https://leetcode.com/problems/linked-list-cycle-ii/) | 线判断是否有环，相遇点为新 slow，fast 回到头节点，再次相遇即为入口节点。 |
+| 8    | 链表中倒数最后k个结点       | [LCR_140](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) | 快慢指针，fast 先移动 k 位，然后 fast 和 slow 每次移一位，fast == null 时返回 slow |
+| 9    | 删除链表的倒数第n个节点     | [leetcode_19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 和上面一样，只多一个虚拟头节点以及 pre 节点记录 slow 的上一个节点 |
 | 10   | 两个链表的第一个公共结点    | [leetcode_10](https://leetcode.com/problems/intersection-of-two-linked-lists/) |                                                              |
 | 11   | 单链表的排序                | [leetcode_11](https://leetcode.com/problems/sort-list/)      |                                                              |
 | 12   | 判断一个链表是否为回文结构  | [leetcode_12](https://leetcode.com/problems/palindrome-linked-list/) |                                                              |
@@ -38,11 +38,11 @@ This is my LeetCode Solutions repository.
 
 | 序号 | 题目名                               | 题号                                                         | 解法简述                                                     |
 | ---- | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1    | 二叉树的前序遍历                     | [leetcode_22](https://leetcode.com/problems/binary-tree-preorder-traversal/) | def preorder(root):<br/>  if root is None: return<br/>  print(root.data)   preorder(root.left)   preorder(root.right) |
-| 2    | 二叉树的中序遍历                     | [leetcode_23](https://leetcode.com/problems/binary-tree-inorder-traversal/) | def inorder(root):<br/>  if root is None: return<br/>  inorder(root.left)     print(root.data)   inorder(root.right) |
-| 3    | 二叉树的后序遍历                     | [leetcode_24](https://leetcode.com/problems/binary-tree-postorder-traversal/) | def postorder(root):<br/>  if root is None: return<br/>  postorder(root.left)   postorder(root.right)   print(root.data) |
-| 4    | 求二叉树的层序遍历                   | [leetcode_25](https://leetcode.com/problems/binary-tree-level-order-traversal/) | for (int i = 0; i < queue.size(); i++) {<br />TreeNode cur = q.poll();  rows.add(cur.val);<br />if (cur.left != null)  q.add(cur.left);<br />if (cur.right != null)  q.add(cur.right);<br />}  result.add(rows); |
-| 5    | 按之字形顺序打印二叉树               | [leetcode_26](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | 同层次遍历，偶数行是反转数组即可                             |
+| 1    | 二叉树的前序遍历                     | [leetcode_144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | def preorder(root):<br/>  if root is None: return<br/>  print(root.data)   preorder(root.left)   preorder(root.right) |
+| 2    | 二叉树的中序遍历                     | [leetcode_94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | def inorder(root):<br/>  if root is None: return<br/>  inorder(root.left)     print(root.data)   inorder(root.right) |
+| 3    | 二叉树的后序遍历                     | [leetcode_145](https://leetcode.com/problems/binary-tree-postorder-traversal/) | def postorder(root):<br/>  if root is None: return<br/>  postorder(root.left)   postorder(root.right)   print(root.data) |
+| 4    | 求二叉树的层序遍历                   | [leetcode_102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | for (int i = 0; i < queue.size(); i++) {<br />TreeNode cur = q.poll();  rows.add(cur.val);<br />if (cur.left != null)  q.add(cur.left);<br />if (cur.right != null)  q.add(cur.right);<br />}  result.add(rows); |
+| 5    | 按之字形顺序打印二叉树               | [leetcode_103](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | 同层次遍历，偶数行是反转数组即可                             |
 | 6    | 二叉树的最大深度                     | [leetcode_27](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | left := maxDepth(root.Left)<br /> right := maxDepth(root.Right)<br /> return 1 + max(left, right) |
 | 7    | 二叉树中和为某一值的路径(一)         | [leetcode_28](https://leetcode.com/problems/path-sum/)       |                                                              |
 | 8    | 二叉搜索树与双向链表                 | [leetcode_29](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) |                                                              |
@@ -126,9 +126,9 @@ This is my LeetCode Solutions repository.
 
 | 序号 | 题目名                 | 题号                                                         | 解法简述                                                     |
 | ---- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1    | 斐波那契数列           | [leetcode_74](https://leetcode.com/problems/fibonacci-number/) | DP: a=0; b=1; for(int i=2;i<=n;i++){ res=a+b; a=b; b=res}<br />Recursion: Fib(n)=Fib(n-1)+Fib(n-2) |
-| 2    | 跳台阶                 | [leetcode_75](https://leetcode.com/problems/climbing-stairs/) | 同斐波那契                                                   |
-| 3    | 最小花费爬楼梯         | [leetcode_76](https://leetcode.com/problems/min-cost-climbing-stairs/) | dp[i]=Min( dp[i-1]+cost[i-1], dp[i-2]+cost[i-2] )            |
+| 1    | 斐波那契数列           | [leetcode_509](https://leetcode.com/problems/fibonacci-number/) | DP: a=0; b=1; for(int i=2;i<=n;i++){ res=a+b; a=b; b=res}<br />Recursion: Fib(n)=Fib(n-1)+Fib(n-2) |
+| 2    | 跳台阶                 | [leetcode_70](https://leetcode.com/problems/climbing-stairs/) | 同斐波那契                                                   |
+| 3    | 最小花费爬楼梯         | [leetcode_746](https://leetcode.com/problems/min-cost-climbing-stairs/) | dp[i]=Min( dp[i-1]+cost[i-1], dp[i-2]+cost[i-2] )            |
 | 4    | 最长公共子序列(二)     | [leetcode_77](https://leetcode.com/problems/longest-common-subsequence/) |                                                              |
 | 5    | 最长公共子串           | [leetcode_78](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) |                                                              |
 | 6    | 不同路径的数目(一)     | [leetcode_79](https://leetcode.com/problems/unique-paths/)   |                                                              |

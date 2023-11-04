@@ -1,8 +1,7 @@
-package main
+package _103_binary_tree_zigzag_level_order_traversal_
 
 import (
 	"container/list"
-	. "nc_tools"
 )
 
 /*
