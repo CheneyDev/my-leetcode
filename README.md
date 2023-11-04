@@ -2,38 +2,158 @@ This is my LeetCode Solutions repository.
 
 # 笔记 📒
 
+
 ### 链表
 
-| 题型                    | 解法                                                         | 题目链接                                                     |
-| ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 反转链表                |                                                              |                                                              |
-| 链表内指定区间反转      |                                                              |                                                              |
-| 链表节点每 k 个一组反转 |                                                              |                                                              |
-| 合并两个已排序链表      |                                                              |                                                              |
-| 合并 k 个已排序链表     |                                                              |                                                              |
-| 判断链表是否有环        | 快慢指针，fast 移两步，slow 移一步，相遇则有环               | [牛客-BM6](https://www.nowcoder.com/share/jump/451570361697200277698) |
-| 链表找环的入口节点      | 线判断是否有环，相遇点为新 slow，fast 回到头节点，再次相遇即为入口节点。 | [牛客-BM7](https://www.nowcoder.com/share/jump/451570361697200277698) |
-| 获取链表最后k个节点     | 快慢指针，fast 先移动 k 位，然后 fast 和 slow 每次移一位，fast == null 时返回 slow | [牛客-BM8](https://www.nowcoder.com/share/jump/451570361697201653561) |
-| 删除链表倒数第k个节点   | 和上面一样，只多一个虚拟头节点以及 pre 节点记录 slow 的上一个节点 | [牛客-BM9](https://www.nowcoder.com/share/jump/451570361697202449761) |
+| 序号 | 题目名                      | 题号                                                         | 解法简述                                                     |
+| ---- | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1    | 反转链表                    | [leetcode_01](https://leetcode.com/problems/reverse-linked-list/) |                                                              |
+| 2    | 链表内指定区间反转          | [leetcode_02](https://leetcode.com/problems/reverse-linked-list-ii/) |                                                              |
+| 3    | 链表中的节点每k个一组翻转   | [leetcode_03](https://leetcode.com/problems/reverse-nodes-in-k-group/) |                                                              |
+| 4    | 合并两个排序的链表          | [leetcode_04](https://leetcode.com/problems/merge-two-sorted-lists/) |                                                              |
+| 5    | 合并k个已排序的链表         | [leetcode_05](https://leetcode.com/problems/merge-k-sorted-lists/) |                                                              |
+| 6    | 判断链表中是否有环          | [leetcode_06](https://leetcode.com/problems/linked-list-cycle/) | 快慢指针，fast 移两步，slow 移一步，相遇则有环               |
+| 7    | 链表中环的入口结点          | [leetcode_07](https://leetcode.com/problems/linked-list-cycle-ii/) | 线判断是否有环，相遇点为新 slow，fast 回到头节点，再次相遇即为入口节点。 |
+| 8    | 链表中倒数最后k个结点       | [leetcode_08](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 快慢指针，fast 先移动 k 位，然后 fast 和 slow 每次移一位，fast == null 时返回 slow |
+| 9    | 删除链表的倒数第n个节点     | [leetcode_09](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 和上面一样，只多一个虚拟头节点以及 pre 节点记录 slow 的上一个节点 |
+| 10   | 两个链表的第一个公共结点    | [leetcode_10](https://leetcode.com/problems/intersection-of-two-linked-lists/) |                                                              |
+| 11   | 单链表的排序                | [leetcode_11](https://leetcode.com/problems/sort-list/)      |                                                              |
+| 12   | 判断一个链表是否为回文结构  | [leetcode_12](https://leetcode.com/problems/palindrome-linked-list/) |                                                              |
+| 13   | 链表的奇偶重排              | [leetcode_13](https://leetcode.com/problems/odd-even-linked-list/) |                                                              |
+| 14   | 删除有序链表中重复的元素-I  | [leetcode_14](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) |                                                              |
+| 15   | 删除有序链表中重复的元素-II | [leetcode_15](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) |                                                              |
+
+### 二分查找/排序
+
+| 序号 | 题目名             | 题号                                                         | 解法简述 |
+| ---- | ------------------ | ------------------------------------------------------------ | -------- |
+| 1    | 二分查找-I         | [leetcode_16](https://leetcode.com/problems/binary-search/)  |          |
+| 2    | 二维数组中的查找   | [leetcode_17](https://leetcode.com/problems/search-a-2d-matrix/) |          |
+| 3    | 寻找峰值           | [leetcode_18](https://leetcode.com/problems/find-peak-element/) |          |
+| 4    | 数组中的逆序对     | [leetcode_19](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) |          |
+| 5    | 旋转数组的最小数字 | [leetcode_20](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |          |
+| 6    | 比较版本号         | [leetcode_21](https://leetcode.com/problems/compare-version-numbers/) |          |
 
 ### 二叉树
 
-| 题型            | 解法                                                         | 题目链接                                                     |
-| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 二叉树前序遍历  | def preorder(root):<br/>  if root is None: return<br/>  print(root.data)   preorder(root.left)   preorder(root.right) | [牛客-BM23](https://www.nowcoder.com/share/jump/451570361697444386866) |
-| 二叉树中序遍历  | def inorder(root):<br/>  if root is None: return<br/>  inorder(root.left)     print(root.data)   inorder(root.right) | [牛客-BM24](https://www.nowcoder.com/share/jump/451570361697444842062) |
-| 二叉树后序遍历  | def postorder(root):<br/>  if root is None: return<br/>  postorder(root.left)   postorder(root.right)   print(root.data) | [牛客-BM25](https://www.nowcoder.com/share/jump/451570361697445319015) |
-| 二叉树层序遍历  | for (int i = 0; i < queue.size(); i++) {<br />TreeNode cur = q.poll();  rows.add(cur.val);<br />if (cur.left != null)  q.add(cur.left);<br />if (cur.right != null)  q.add(cur.right);<br />}  result.add(rows); | [牛客-BM26](https://www.nowcoder.com/share/jump/451570361697446273524) |
-| 二叉树 Z 型遍历 | 同层次遍历，偶数行是反转数组即可                             | [牛客-BM26](https://www.nowcoder.com/share/jump/451570361698941833925) |
-|                 |                                                              |                                                              |
+| 序号 | 题目名                               | 题号                                                         | 解法简述                                                     |
+| ---- | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1    | 二叉树的前序遍历                     | [leetcode_22](https://leetcode.com/problems/binary-tree-preorder-traversal/) | def preorder(root):<br/>  if root is None: return<br/>  print(root.data)   preorder(root.left)   preorder(root.right) |
+| 2    | 二叉树的中序遍历                     | [leetcode_23](https://leetcode.com/problems/binary-tree-inorder-traversal/) | def inorder(root):<br/>  if root is None: return<br/>  inorder(root.left)     print(root.data)   inorder(root.right) |
+| 3    | 二叉树的后序遍历                     | [leetcode_24](https://leetcode.com/problems/binary-tree-postorder-traversal/) | def postorder(root):<br/>  if root is None: return<br/>  postorder(root.left)   postorder(root.right)   print(root.data) |
+| 4    | 求二叉树的层序遍历                   | [leetcode_25](https://leetcode.com/problems/binary-tree-level-order-traversal/) | for (int i = 0; i < queue.size(); i++) {<br />TreeNode cur = q.poll();  rows.add(cur.val);<br />if (cur.left != null)  q.add(cur.left);<br />if (cur.right != null)  q.add(cur.right);<br />}  result.add(rows); |
+| 5    | 按之字形顺序打印二叉树               | [leetcode_26](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | 同层次遍历，偶数行是反转数组即可                             |
+| 6    | 二叉树的最大深度                     | [leetcode_27](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |                                                              |
+| 7    | 二叉树中和为某一值的路径(一)         | [leetcode_28](https://leetcode.com/problems/path-sum/)       |                                                              |
+| 8    | 二叉搜索树与双向链表                 | [leetcode_29](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) |                                                              |
+| 9    | 对称的二叉树                         | [leetcode_30](https://leetcode.com/problems/symmetric-tree/) |                                                              |
+| 10   | 合并二叉树                           | [leetcode_31](https://leetcode.com/problems/merge-two-binary-trees/) |                                                              |
+| 11   | 二叉树的镜像                         | [leetcode_32](https://leetcode.com/problems/invert-binary-tree/) |                                                              |
+| 12   | 判断是不是二叉搜索树                 | [leetcode_33](https://leetcode.com/problems/validate-binary-search-tree/) |                                                              |
+| 13   | 判断是不是完全二叉树                 | [leetcode_34](https://leetcode.com/problems/check-completeness-of-a-binary-tree/) |                                                              |
+| 14   | 判断是不是平衡二叉树                 | [leetcode_35](https://leetcode.com/problems/balanced-binary-tree/) |                                                              |
+| 15   | 二叉搜索树的最近公共祖先             | [leetcode_36](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |                                                              |
+| 16   | 在二叉树中找到两个节点的最近公共祖先 | [leetcode_37](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) |                                                              |
+| 17   | 序列化二叉树                         | [leetcode_38](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |                                                              |
+| 18   | 重建二叉树                           | [leetcode_39](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |                                                              |
+| 19   | 输出二叉树的右视图                   | [leetcode_40](https://leetcode.com/problems/binary-tree-right-side-view/) |                                                              |
+
+### 堆/栈/队列
+
+| 序号 | 题目名       | 题号                                                                            | 解法简述 |
+|----|-----------|-------------------------------------------------------------------------------|------|
+| 1  | 用两个栈实现队列  | [leetcode_41](https://leetcode.com/problems/implement-queue-using-stacks/)    |      |
+| 2  | 包含min函数的栈 | [leetcode_42](https://leetcode.com/problems/min-stack/)                       |      |
+| 3  | 有效括号序列    | [leetcode_43](https://leetcode.com/problems/valid-parentheses/)               |      |
+| 4  | 滑动窗口的最大值  | [leetcode_44](https://leetcode.com/problems/sliding-window-maximum/)          |      |
+| 5  | 最小的K个数    | [leetcode_45](https://leetcode.com/problems/smallest-k-lcci/)                 |      |
+| 6  | 寻找第K大     | [leetcode_46](https://leetcode.com/problems/kth-largest-element-in-an-array/) |      |
+| 7  | 表达式求值     | [leetcode_47](https://leetcode.com/problems/basic-calculator/)                |      |
+
+### 哈希
+
+| 序号 | 题目名            | 题号                                                                   | 解法简述 |
+|----|----------------|----------------------------------------------------------------------|------|
+| 1  | 两数之和           | [leetcode_48](https://leetcode.com/problems/two-sum/)                |      |
+| 2  | 数组中出现次数超过一半的数字 | [leetcode_49](https://leetcode.com/problems/majority-element/)       |      |
+| 3  | 数组中只出现一次的两个数字  | [leetcode_50](https://leetcode.com/problems/single-number-iii/)      |      |
+| 4  | 缺失的第一个正整数      | [leetcode_51](https://leetcode.com/problems/first-missing-positive/) |      |
+| 5  | 三数之和           | [leetcode_52](https://leetcode.com/problems/3sum/)                   |      |
 
 
+### 递归/回溯
+
+| 序号 | 题目名         | 题号                                                                                | 解法简述 |
+|----|-------------|-----------------------------------------------------------------------------------|------|
+| 1  | 没有重复项数字的全排列 | [leetcode_53](https://leetcode.com/problems/permutations/)                        |      |
+| 2  | 有重复项数字的全排列  | [leetcode_54](https://leetcode.com/problems/permutations-ii/)                     |      |
+| 3  | 岛屿数量        | [leetcode_55](https://leetcode.com/problems/number-of-islands/)                   |      |
+| 4  | 字符串的排列      | [leetcode_56](https://leetcode.com/problems/permutation-in-string/)               |      |
+| 5  | N皇后问题       | [leetcode_57](https://leetcode.com/problems/n-queens/)                            |      |
+| 6  | 括号生成        | [leetcode_58](https://leetcode.com/problems/generate-parentheses/)                |      |
+| 7  | 矩阵最长递增路径    | [leetcode_59](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) |      |
+
+### 字符串
+
+| 序号 | 题目名    | 题号                                                                      | 解法简述 |
+|----|--------|-------------------------------------------------------------------------|------|
+| 1  | 字符串变形  | [leetcode_60](https://leetcode.com/problems/zi-fu-chuan-bian-hua-lcof/) |      |
+| 2  | 最长公共前缀 | [leetcode_61](https://leetcode.com/problems/longest-common-prefix/)     |      |
+| 3  | 验证IP地址 | [leetcode_62](https://leetcode.com/problems/validate-ip-address/)       |      |
+| 4  | 大数加法   | [leetcode_63](https://leetcode.com/problems/add-strings/)               |      |
+
+### 双指针
+
+| 序号 | 题目名        | 题号                                                                                           | 解法简述 |
+|----|------------|----------------------------------------------------------------------------------------------|------|
+| 1  | 合并两个有序的数组  | [leetcode_64](https://leetcode.com/problems/merge-sorted-array/)                             |      |
+| 2  | 判断是否为回文字符串 | [leetcode_65](https://leetcode.com/problems/valid-palindrome/)                               |      |
+| 3  | 合并区间       | [leetcode_66](https://leetcode.com/problems/merge-intervals/)                                |      |
+| 4  | 最小覆盖子串     | [leetcode_67](https://leetcode.com/problems/minimum-window-substring/)                       |      |
+| 5  | 反转字符串      | [leetcode_68](https://leetcode.com/problems/reverse-string/)                                 |      |
+| 6  | 最长无重复子数组   | [leetcode_69](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |      |
+| 7  | 盛水最多的容器    | [leetcode_70](https://leetcode.com/problems/container-with-most-water/)                      |      |
+| 8  | 接雨水问题      | [leetcode_71](https://leetcode.com/problems/trapping-rain-water/)                            |      |
+
+### 贪心算法
+
+| 序号 | 题目名      | 题号                                                         | 解法简述 |
+|----|----------|------------------------------------------------------------|------|
+| 1  | 分糖果问题    | [leetcode_72](https://leetcode.com/problems/candy/)        |      |
+| 2  | 主持人调度（二） | [leetcode_73](https://leetcode.com/problems/assign-tasks/) |      |
 
 ### 动态规划
 
-| 题型            | 解法                                                         | 题目链接                                                     |
-| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 斐波那契额数列  | DP: a=0; b=1; for(int i=2;i<=n;i++){ res=a+b; a=b; b=res}<br />Recursion: Fib(n)=Fib(n-1)+Fib(n-2) | [牛客-BM62](https://www.nowcoder.com/share/jump/451570361697356052120) |
-| 求台阶 n 种走法 | 同斐波那契                                                   | [牛客-BM63](https://www.nowcoder.com/share/jump/451570361697425209007) |
-| 最小花费爬楼梯  | dp[i]=Min( dp[i-1]+cost[i-1], dp[i-2]+cost[i-2] )            | [牛客-BM64](https://www.nowcoder.com/share/jump/451570361697438891247) |
+| 序号 | 题目名                 | 题号                                                         | 解法简述                                                     |
+| ---- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1    | 斐波那契数列           | [leetcode_74](https://leetcode.com/problems/fibonacci-number/) | DP: a=0; b=1; for(int i=2;i<=n;i++){ res=a+b; a=b; b=res}<br />Recursion: Fib(n)=Fib(n-1)+Fib(n-2) |
+| 2    | 跳台阶                 | [leetcode_75](https://leetcode.com/problems/climbing-stairs/) | 同斐波那契                                                   |
+| 3    | 最小花费爬楼梯         | [leetcode_76](https://leetcode.com/problems/min-cost-climbing-stairs/) | dp[i]=Min( dp[i-1]+cost[i-1], dp[i-2]+cost[i-2] )            |
+| 4    | 最长公共子序列(二)     | [leetcode_77](https://leetcode.com/problems/longest-common-subsequence/) |                                                              |
+| 5    | 最长公共子串           | [leetcode_78](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) |                                                              |
+| 6    | 不同路径的数目(一)     | [leetcode_79](https://leetcode.com/problems/unique-paths/)   |                                                              |
+| 7    | 矩阵的最小路径和       | [leetcode_80](https://leetcode.com/problems/minimum-path-sum/) |                                                              |
+| 8    | 把数字翻译成字符串     | [leetcode_81](https://leetcode.com/problems/decode-ways/)    |                                                              |
+| 9    | 兑换零钱(一)           | [leetcode_82](https://leetcode.com/problems/coin-change/)    |                                                              |
+| 10   | 最长上升子序列(一)     | [leetcode_83](https://leetcode.com/problems/longest-increasing-subsequence/) |                                                              |
+| 11   | 连续子数组的最大和     | [leetcode_84](https://leetcode.com/problems/maximum-subarray/) |                                                              |
+| 12   | 最长回文子串           | [leetcode_85](https://leetcode.com/problems/longest-palindromic-substring/) |                                                              |
+| 13   | 数字字符串转化成IP地址 | [leetcode_86](https://leetcode.com/problems/restore-ip-addresses/) |                                                              |
+| 14   | 编辑距离(一)           | [leetcode_87](https://leetcode.com/problems/edit-distance/)  |                                                              |
+| 15   | 正则表达式匹配         | [leetcode_88](https://leetcode.com/problems/regular-expression-matching/) |                                                              |
+| 16   | 最长的括号子串         | [leetcode_89](https://leetcode.com/problems/longest-valid-parentheses/) |                                                              |
+| 17   | 打家劫舍(一)           | [leetcode_90](https://leetcode.com/problems/house-robber/)   |                                                              |
+| 18   | 打家劫舍(二)           | [leetcode_91](https://leetcode.com/problems/house-robber-ii/) |                                                              |
+| 19   | 买卖股票的最好时机(一) | [leetcode_92](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |                                                              |
+| 20   | 买卖股票的最好时机(二) | [leetcode_93](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) |                                                              |
+| 21   | 买卖股票的最好时机(三) | [leetcode_94](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) |                                                              |
 
+### 模拟
+
+| 序号 | 题目名       | 题号                                                          | 解法简述 |
+|----|-----------|-------------------------------------------------------------|------|
+| 1  | 旋转数组      | [leetcode_95](https://leetcode.com/problems/rotate-array/)  |      |
+| 2  | 螺旋矩阵      | [leetcode_96](https://leetcode.com/problems/spiral-matrix/) |      |
+| 3  | 顺时针旋转矩阵   | [leetcode_97](https://leetcode.com/problems/rotate-image/)  |      |
+| 4  | 设计LRU缓存结构 | [leetcode_98](https://leetcode.com/problems/lru-cache/)     |      |
+| 5  | 设计LFU缓存结构 | [leetcode_99](https://leetcode.com/problems/lfu-cache/)     |      |
