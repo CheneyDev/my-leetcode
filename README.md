@@ -43,7 +43,7 @@ This is my LeetCode Solutions repository.
 | 3    | 二叉树的后序遍历                     | [leetcode_24](https://leetcode.com/problems/binary-tree-postorder-traversal/) | def postorder(root):<br/>  if root is None: return<br/>  postorder(root.left)   postorder(root.right)   print(root.data) |
 | 4    | 求二叉树的层序遍历                   | [leetcode_25](https://leetcode.com/problems/binary-tree-level-order-traversal/) | for (int i = 0; i < queue.size(); i++) {<br />TreeNode cur = q.poll();  rows.add(cur.val);<br />if (cur.left != null)  q.add(cur.left);<br />if (cur.right != null)  q.add(cur.right);<br />}  result.add(rows); |
 | 5    | 按之字形顺序打印二叉树               | [leetcode_26](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | 同层次遍历，偶数行是反转数组即可                             |
-| 6    | 二叉树的最大深度                     | [leetcode_27](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |                                                              |
+| 6    | 二叉树的最大深度                     | [leetcode_27](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | left := maxDepth(root.Left)<br /> right := maxDepth(root.Right)<br /> return 1 + max(left, right) |
 | 7    | 二叉树中和为某一值的路径(一)         | [leetcode_28](https://leetcode.com/problems/path-sum/)       |                                                              |
 | 8    | 二叉搜索树与双向链表                 | [leetcode_29](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) |                                                              |
 | 9    | 对称的二叉树                         | [leetcode_30](https://leetcode.com/problems/symmetric-tree/) |                                                              |
