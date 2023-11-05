@@ -44,7 +44,7 @@ This is my LeetCode Solutions repository.
 | 4    | 求二叉树的层序遍历                   | [leetcode_102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | for (int i = 0; i < queue.size(); i++) {<br />TreeNode cur = q.poll();  rows.add(cur.val);<br />if (cur.left != null)  q.add(cur.left);<br />if (cur.right != null)  q.add(cur.right);<br />}  result.add(rows); |
 | 5    | 按之字形顺序打印二叉树               | [leetcode_103](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | 同层次遍历，偶数行是反转数组即可                             |
 | 6    | 二叉树的最大深度                     | [leetcode_104](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | left := maxDepth(root.Left)<br /> right := maxDepth(root.Right)<br /> return 1 + max(left, right) |
-| 7    | 二叉树中和为某一值的路径(一)         | [leetcode_112](https://leetcode.com/problems/path-sum/)      |                                                              |
+| 7    | 二叉树中和为某一值的路径(一)         | [leetcode_112](https://leetcode.com/problems/path-sum/)      | curSum := 0<br /> if root == nil { return false }<br /> return traversal(root, curSum, targetSum) |
 | 8    | 二叉搜索树与双向链表                 | [leetcode_426](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) |                                                              |
 | 9    | 对称的二叉树                         | [leetcode_101](https://leetcode.com/problems/symmetric-tree/) |                                                              |
 | 10   | 合并二叉树                           | [leetcode_617](https://leetcode.com/problems/merge-two-binary-trees/) |                                                              |
