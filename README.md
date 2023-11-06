@@ -7,9 +7,9 @@ This is my LeetCode Solutions repository.
 
 | 序号 | 题目名                      | 题号                                                         | 解法简述                                                     |
 | ---- | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1    | 反转链表                    | [leetcode_206](https://leetcode.com/problems/reverse-linked-list/) |                                                              |
-| 2    | 链表内指定区间反转          | [leetcode_92](https://leetcode.com/problems/reverse-linked-list-ii/) |                                                              |
-| 3    | 链表中的节点每k个一组翻转   | [leetcode_25](https://leetcode.com/problems/reverse-nodes-in-k-group/) |                                                              |
+| 1    | 反转链表                    | [leetcode_206](https://leetcode.com/problems/reverse-linked-list/) | while(cur!=null){<br/>temp=cur.next; cur.next=pre; <br/>pre=cur; cur=temp; } |
+| 2    | 链表内指定区间反转          | [leetcode_92](https://leetcode.com/problems/reverse-linked-list-ii/) | ！TO DO：换掉牛客网给的解法逆天解法                          |
+| 3    | 链表中的节点每k个一组翻转   | [leetcode_25](https://leetcode.com/problems/reverse-nodes-in-k-group/) | ！TO DO：换掉牛客网给的解法逆天解法                          |
 | 4    | 合并两个排序的链表          | [leetcode_21](https://leetcode.com/problems/merge-two-sorted-lists/) |                                                              |
 | 5    | 合并k个已排序的链表         | [leetcode_23](https://leetcode.com/problems/merge-k-sorted-lists/) |                                                              |
 | 6    | 判断链表中是否有环          | [leetcode_141](https://leetcode.com/problems/linked-list-cycle/) | 快慢指针，fast 移两步，slow 移一步，相遇则有环               |
