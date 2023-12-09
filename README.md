@@ -54,7 +54,7 @@ This is my LeetCode Solutions repository.
 | 14   | 判断是不是平衡二叉树                 | [leetcode_110](https://leetcode.com/problems/balanced-binary-tree/) | dif := maxDepth(root.Left) - maxDepth(root.Right)<br />if dif <= 1 && dif >= -1 {<br />return isBalanced(root.Left) && isBalanced(root.Right) }<br />else { return false } |
 | 15   | 二叉搜索树的最近公共祖先             | [leetcode_235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | if p.Val > root.Val && q.Val > root.Val { root = root.Right }<br />else if p.Val < root.Val && q.Val < root.Val { root = root.Left }<br />else { return root } |
 | 16   | 在二叉树中找到两个节点的最近公共祖先 | [leetcode_236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | if root==nil \|\| root==p \|\| root==q { return root }<br />left := lowestCommonAncestor(root.Left, p, q )<br />right := lowestCommonAncestor(root.Right, p, q )<br />if (left != nil && right != nil) { return root }<br />if left != nil { return left}<br />return right |
-| 17   | 序列化二叉树                         | [leetcode_297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |                                                              |
+| 17   | 序列化二叉树                         | [leetcode_297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | 序列化：深度优先遍历                                         |
 | 18   | 重建二叉树                           | [leetcode_105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |                                                              |
 | 19   | 输出二叉树的右视图                   | [leetcode_199](https://leetcode.com/problems/binary-tree-right-side-view/) |                                                              |
 
