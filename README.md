@@ -56,7 +56,7 @@ This is my LeetCode Solutions repository.
 | 16   | 在二叉树中找到两个节点的最近公共祖先 | [leetcode_236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | if root==nil \|\| root==p \|\| root==q { return root }<br />left := lowestCommonAncestor(root.Left, p, q )<br />right := lowestCommonAncestor(root.Right, p, q )<br />if (left != nil && right != nil) { return root }<br />if left != nil { return left}<br />return right |
 | 17   | 序列化二叉树                         | [leetcode_297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | 序列化：深度优先遍历                                         |
 | 18   | 重建二叉树                           | [leetcode_105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |                                                              |
-| 19   | 输出二叉树的右视图                   | [leetcode_199](https://leetcode.com/problems/binary-tree-right-side-view/) |                                                              |
+| 19   | 输出二叉树的右视图                   | [leetcode_199](https://leetcode.com/problems/binary-tree-right-side-view/) | 广度优先遍历 <br />if i == levelLength-1 { result = append(result, node.Val) } |
 
 ### 堆/栈/队列
 
